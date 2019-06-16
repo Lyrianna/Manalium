@@ -1,0 +1,218 @@
+/* main.css
+--date-début-
+--05/06/2019-
+-------------
+-----par-----
+Néphélie LAMBRINIDIS */
+
+/*STYLE GENERAL*/
+
+/*Polices*/
+@import url('https://fonts.googleapis.com/css?family=ABeeZee&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two&display=swap');
+
+body{
+    font-family: 'ABeeZee', sans-serif;
+    margin: 0;
+    padding:0;
+    background: url(headermana.jpg) no-repeat center fixed;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Lobster Two', cursive;
+    margin: 0;
+}
+/*CORPS TEXTE*/
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: #218947;
+}
+ul {
+    list-style:none;
+    margin-left:0;
+    padding-left:0;
+}
+li {
+    margin-bottom: 0px;/* à adapter */
+}
+
+/*HEADER*/
+/*Navigation*/
+/*.header-nav{*/
+/*    position:-ms-device-fixed;*/
+/*    background-color: black;*/
+/*}*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+#header h1 {
+    position: absolute;
+    left: 1em;
+    top: 0;
+    height: 3em;
+    line-height: 3em;
+    cursor: default;
+}
+.header{
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    height: 3em;
+    line-height: 3em;
+    box-shadow: 0 0 2em 0 rgba(0, 0, 0, 0.2);
+}
+
+nav.header-nav h1{
+    position: absolute;
+    left: 1em;
+    top: 0;
+    height: 3em;
+    line-height: 3em;
+    cursor: default;
+}
+
+nav.header-nav ul {
+    text-align: right;
+    margin: 0 3%;
+}
+nav.header-nav ul li.bouton{
+    list-style-type: none;
+    display: inline-block;
+    font-size: 1.2em;
+    margin-left: 1.5em;
+}
+
+/*SECTIONS*/
+/*One*/
+#banner {
+    height: 100vh;
+    min-height: 35em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+.ONE{
+    margin-top: 3em;
+    padding: 2% 1%;
+    /*background-image: url("../Images/headermana.jpg");*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+}
+div#intro{
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 100%;
+    padding: 2%;
+}
+
+div#intro{
+    text-align: center;
+    font-size: 400%;
+    color: black;
+}
+div#intro p{
+    font-size: 50%;
+}
+/*Two*/
+.white{
+    background: white;
+    padding: 2% 1%;
+}
+.white h3{
+    font-size: 250%;
+    text-align: center;
+    margin: 3px;
+}
+.white p{
+    font-size: 150%;
+}
+/*CONTACT*/
+.box{
+    margin: 10% 10%;
+    background: rgba(255, 255, 255, 0.55);
+    box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.2);
+    padding: 5%;
+    border-radius: 40%;
+}
+h3{
+    font-size: 90%;
+}
+/*FOOTER*/
+#design
+{
+    margin: auto;
+}
+#social
+{
+    display: flex;
+    justify-content: left;
+}
+footer ul{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: right;
+}
+.footer{
+    position: relative;
+    z-index: 10000;
+    bottom: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    height: 3em;
+    line-height: 3em;
+    box-shadow: 0 0 2em 0 rgba(0, 0, 0, 0.2);
+}
+#copyright{
+    justify-content: right;
+}
+
+/*PAGESGEN*/
+.titres{
+    text-align: center;
+    font-size: 400%;
+    color: black;
+}
+.element{
+    margin : 2%;
+}
+.infos figcaption{
+    font-size: 80%;
+}
+.titres h3{
+    margin: 2%;
+}
+img{
+    margin:1%;
+}
+
+/*RESPONSIVE*/
+@media screen and (min-width: 900px) {
+    .conteneur {
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 900px) {
+    .conteneur
+    {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-content: center;
+    }
+}
